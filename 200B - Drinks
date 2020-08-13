@@ -1,0 +1,22 @@
+//By ankitraturi44, contest: Codeforces Round #126 (Div. 2), problem: (B) Drinks, Accepted
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int t;
+    cin>>t;
+    double sum=0.0;
+    int n=t;
+    while(t--)
+    {
+        double k;
+        cin>>k;
+        sum+=k;
+    }
+    cout<<fixed<<setprecision(12)<<(sum/n)<<"\n";
+    return 0;
+}
