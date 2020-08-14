@@ -1,6 +1,7 @@
 //By ankitraturi44, contest: Codeforces Beta Round #69 (Div. 2 Only), problem: (A) Panoramix's Prediction, Accepted
 
 
+
 #include<bits/stdc++.h>
 using namespace std;
 int main()
