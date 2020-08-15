@@ -1,0 +1,32 @@
+//By ankitraturi44, contest: Codeforces Beta Round #65 (Div. 2), problem: (A) Way Too Long Words, Accepted
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int t;
+    cin>>t;
+    while(t--)
+    {
+ 
+    string s;
+    cin>>s;
+    int l=s.length();
+    int c=0,j=0;
+    if(l<=10)
+    {
+        cout<<s<<"\n";
+    }
+    else
+    {
+        for(int i=1;i<l;i++)
+            c++;
+ 
+    cout<<s[j]<<c-1<<s[l-1]<<"\n";
+    }
+    }
+    return 0;
+}
