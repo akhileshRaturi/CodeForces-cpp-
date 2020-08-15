@@ -1,0 +1,21 @@
+//By ankitraturi44, contest: Codeforces Round #141 (Div. 2), problem: (A) Is your horseshoe on the other hoof?, Accepted.
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    long long int a,b,c,d,e=0;
+    cin>>a>>b>>c>>d;
+    set<int> s;
+    s.insert(a);
+    s.insert(b);
+    s.insert(c);
+    s.insert(d);
+    int z=s.size();
+ 
+    cout<<4-z;
+    return 0;
+}
