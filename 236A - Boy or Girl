@@ -1,0 +1,21 @@
+//By ankitraturi44, contest: Codeforces Round #146 (Div. 2), problem: (A) Boy or Girl, Accepted
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    string s;
+    cin>>s;
+    set<char> a;
+    for(int i=0;i<s.size();i++)
+        a.insert(s[i]);
+    int l=a.size();
+    if(l%2==0)
+        cout<<"CHAT WITH HER!";
+    else
+        cout<<"IGNORE HIM!";
+    return 0;
+}
