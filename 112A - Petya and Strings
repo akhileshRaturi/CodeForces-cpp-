@@ -1,0 +1,29 @@
+//By ankitraturi44, contest: Codeforces Beta Round #85 (Div. 2 Only), problem: (A) Petya and Strings, Accepted.
+
+
+#include<bits/stdc++.h>
+#include<algorithm>
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    string s,d;
+    cin>>s>>d;
+    transform(s.begin(),s.end(),s.begin(),::tolower);
+    transform(d.begin(),d.end(),d.begin(),::tolower);
+ 
+        if(s>d)
+        {
+            cout<<"1";
+        }
+        else if(s<d)
+        {
+            cout<<"-1";
+        }
+        else if(s==d)
+        {
+            cout<<"0";
+        }
+   return 0;
+}
