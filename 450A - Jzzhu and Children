@@ -1,0 +1,26 @@
+//By ankitraturi44, contest: Codeforces Round #257 (Div. 2), problem: (A) Jzzhu and Children, Accepted.
+
+
+
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    ll n,c,m=0;
+    cin>>n>>c;
+    double d,maxi=INT_MIN;
+    for(ll i=1;i<=n;i++)
+    {
+        cin>>d;
+        if(ceil(d/c)>=maxi)
+        {
+            m=i;
+            maxi=ceil(d/c);
+        }
+    }
+    cout<<m<<endl;
+return 0;
+}
