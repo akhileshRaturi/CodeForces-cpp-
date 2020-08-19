@@ -1,0 +1,20 @@
+//By ankitraturi44, contest: Codeforces Round #138 (Div. 2), problem: (A) Parallelepiped, Accepted.
+
+
+#include<bits/stdc++.h>
+#include<math.h>
+using  namespace std;
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int a,b,c;
+    cin>>a>>b>>c;
+    int q,w,e;
+    q=sqrt((a*b)/c);
+    w=sqrt((b*c)/a);
+    e=sqrt((a*c)/b);
+    int ans=4*(q+w+e);
+    cout<<ans<<endl;
+    return 0;
+}
