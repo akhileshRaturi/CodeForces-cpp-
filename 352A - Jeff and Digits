@@ -1,0 +1,34 @@
+//By ankitraturi44, contest: Codeforces Round #204 (Div. 2), problem: (A) Jeff and Digits, Accepted
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int n;
+    cin>>n;
+    int z=0,f=0,m;
+    for(int i=0;i<n;i++)
+    {
+        cin>>m;
+        if(m==0)
+            z++;
+        else if(m==5)
+                f++;
+    }
+    if(z==0)
+        cout<<"-1\n";
+    else if(f<9)
+        cout<<"0\n";
+    else
+    {
+        f-=f%9;
+        for(int i=1;i<=f;i++)
+            cout<<"5";
+        for(int i=1;i<=z;i++)
+            cout<<"0";
+    }
+    return 0;
+}
