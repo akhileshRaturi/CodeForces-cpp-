@@ -1,0 +1,35 @@
+//By ankitraturi44, contest: Codeforces Round #129 (Div. 2), problem: (A) Little Elephant and Rozdil, Accepted.
+
+
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    ll n,t;
+    cin>>n;
+    ll mini=INT_MAX,show=1,c=0;
+    for(ll i=1;i<=n;i++)
+        {
+            cin>>t;
+            if(t<mini)
+            {
+                mini=t;
+                //cout<<mini<<endl;
+                show=i;
+                c=1;
+                //cout<<show<<endl;
+            }
+            else if(t==mini)
+            {
+                c+=1;
+            }
+        }
+        if(c>1)
+            printf("Still Rozdil\n");
+        else
+            printf("%ld\n",show);
+    return 0;
+}
