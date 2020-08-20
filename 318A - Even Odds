@@ -1,0 +1,30 @@
+//By ankitraturi44, contest: Codeforces Round #188 (Div. 2), problem: (A) Even Odds, Accepted.
+
+
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
+ 
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    ll n,c;
+    cin>>n>>c;
+    ll o,j;
+    if(n%2==0)
+        j=n/2;
+    else
+        j=((n+1)/2);
+    if(c<=j)
+    {
+        o=((2*c)-1);
+        cout<<o<<"\n";
+    }
+    else
+    {
+        o=(c-(n+1)/2);
+        cout<<2*o<<"\n";
+    }
+    return 0;
+}
