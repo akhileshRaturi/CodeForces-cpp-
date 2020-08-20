@@ -1,0 +1,12 @@
+//By ankitraturi44, contest: Codeforces Round #125 (Div. 2), problem: (A) Hexadecimal's theorem, Accepted, #, Copy
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    cout<<"0 0 "<<n<<endl;  // the logic here is that we can print any solution(as there are many) so "0" is a number is fibonacci and n is also there.
+    return 0;
+}
