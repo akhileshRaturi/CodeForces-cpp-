@@ -1,0 +1,35 @@
+//By ankitraturi44, contest: Codeforces Beta Round #77 (Div. 2 Only), problem: (A) Football, Accepted.
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    string s;
+    cin>>s;
+    char t=s[0];
+    int c=1;
+    //cout<<"t= "<<t<<endl;
+    for(int i=1;i<s.size();i++)
+    {
+        if(t==s[i])
+        {
+            c++;
+            if(c==7)
+            {
+                cout<<"YES\n";
+                return 0;
+            }
+        }
+        else
+        {
+            t=s[i];
+            c=1;
+      //      cout<<"t= "<<t<<endl;
+        }
+    }
+    cout<<"NO\n";
+    return 0;
+}
