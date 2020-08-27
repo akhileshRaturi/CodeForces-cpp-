@@ -1,0 +1,51 @@
+//By ankitraturi44, contest: Codeforces Round #106 (Div. 2), problem: (A) Business trip, Accepted.
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int n;
+    cin>>n;
+    vector<int > v;
+    int a;
+        for(int i=0;i<12;i++)
+            {
+                cin>>a;
+                v.push_back(a);
+            }
+    if(n==0)
+    {
+        cout<<"0\n";
+        return 0;
+    }
+    else
+    {
+ 
+        int sum=0,c=0;
+        sort(v.begin(),v.end(),greater<int>());
+        for(int i=0;i<v.size();i++)
+        {
+            if(sum<n)
+            {
+                sum+=v[i];
+                c++;
+            }
+            else
+                break;
+        }
+        if(sum>=n)
+        {
+                //cout<<"agya\n";
+                cout<<c<<endl;
+                return 0;
+        }
+        else
+        {
+            cout<<"-1\n";
+        }
+    }
+    return 0;
+}
