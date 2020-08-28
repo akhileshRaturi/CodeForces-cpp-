@@ -1,0 +1,16 @@
+//By ankitraturi44, contest: Codeforces Round #136 (Div. 2), problem: (A) Little Elephant and Function, Accepted.
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int n;
+    cin>>n;
+    cout<<n<<" ";
+    for(int i=1;i<n;i++)
+        cout<<i<<" ";
+    return 0;
+}
