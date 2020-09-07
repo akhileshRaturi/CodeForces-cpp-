@@ -1,0 +1,39 @@
+//By ankitraturi44, contest: Codeforces Round #169 (Div. 2), problem: (B) Little Girl and Game, Accepted.
+
+
+#include<bits/stdc++.h>
+#include<utility>
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(0), cin.tie(0);
+    string s;
+    cin>>s;
+    unordered_map<char,int> u;
+    for(int i=0;i<s.size();i++)
+    {
+        if(u.find(s[i])==u.end())
+            u.insert(make_pair(s[i],1));
+        else
+            u[s[i]]++;
+    }
+    int c=0,d=0;
+    for(auto i:u)
+    {
+        if(i.second%2!=0)
+            c++;
+    }
+    if(c<=1)
+    {
+        cout<<"First\n";
+    }
+    else if(c%2==0)
+    {
+        cout<<"Second\n";
+    }
+    else
+    {
+        cout<<"First\n";
+    }
+    return 0;
+}
