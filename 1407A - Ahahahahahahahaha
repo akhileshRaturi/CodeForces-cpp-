@@ -1,0 +1,79 @@
+//By ankitraturi44, contest: Codeforces Round #669 (Div. 2), problem: (A) Ahahahahahahahaha, Accepted
+
+
+#include<bits/stdc++.h>
+#define f(i,n) for(ll i=1;i<=n;i++)
+#define ll long long
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
+    ll t;
+    cin>>t;
+    while(t--)
+    {
+        ll n;
+        cin>>n;
+        ll a[n];
+        f(i,n)
+        {
+            cin>>a[i];
+        }
+        ll y=0,x=0,z=0,o=0,s=0;
+        f(i,n)
+        {
+            if(a[i]==1)
+                o++;
+            else
+                z++;
+        }
+        for(ll i=0;i<n-1;i+=2)
+        {
+           s=s+a[i]-a[i+1];
+        }
+        //cout<<"even = "<<e<<" odd= "<<o<<"\n";
+        if(s==0 || o==n || z==n)
+        {
+            cout<<n<<"\n";
+            f(i,n)
+            {
+                cout<<a[i]<<" ";
+            }
+            cout<<"\n";
+        }
+        else if(n%2==0)
+        {
+            if(z>=n/2)
+            {
+                cout<<z<<"\n";
+                for(ll i=0;i<z;i++)
+                {
+                    cout<<"0 ";
+                }
+                cout<<"\n";
+            }
+            else
+            {
+                if(o%2==0)
+                {
+                    cout<<o<<"\n";
+            for(ll i=0;i<o;i++)
+            {
+                cout<<"1 ";
+            }
+            cout<<"\n";
+                }
+                else
+                {
+                    cout<<o-1<<"\n";
+                    for(ll i=0;i<o-1;i++)
+                    {
+                        cout<<"1 ";
+                    }
+                    cout<<"\n";
+                }
+        }
+    }
+    }
+    return 0;
+}
