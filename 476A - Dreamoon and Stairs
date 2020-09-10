@@ -1,0 +1,32 @@
+//By ankitraturi44, contest: Codeforces Round #272 (Div. 2), problem: (A) Dreamoon and Stairs, Accepted.
+
+
+#include<bits/stdc++.h>
+using namespace std;
+#define fast ios::sync_with_stdio(0),cin.tie(0);
+int main()
+{
+    fast;
+    int n,d;
+    cin>>n>>d;
+    int c=0;
+    if(d>n)
+        c=-1;
+    else
+    {
+        if(n%2==0)
+        {
+            c=n/2;
+        }
+        else
+        {
+            c=(n/2)+1;
+        }
+        while(c%d!=0)
+        {
+            c++;
+        }
+    }
+    cout<<c<<"\n";
+    return 0;
+}
