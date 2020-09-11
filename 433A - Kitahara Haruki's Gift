@@ -1,0 +1,40 @@
+//By ankitraturi44, contest: Codeforces Round #248 (Div. 2), problem: (A) Kitahara Haruki's Gift, Accepted
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int n;
+    cin>>n;
+    long long sum=0,c=0,d=0;
+    while(n--)
+    {
+        int x;
+        cin>>x;
+        if(x==100)
+            c++;
+        else
+            d++;
+        sum+=x;
+    }
+    int f=sum/2;
+    if(sum%200!=0)
+         cout<<"NO\n";
+    else
+    {
+        bool ans=false;
+        for(int i=0;i<=d;i++)
+        {
+            if(200*i <=f && f-200*i <= c*100)
+                ans=true;
+        }
+        if(ans)
+            cout<<"YES\n";
+        else
+            cout<<"NO\n";
+    }
+return 0;
+}
